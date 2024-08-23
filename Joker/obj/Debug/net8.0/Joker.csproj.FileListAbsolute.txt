@@ -1,0 +1,14 @@
+/Users/baqari/Desktop/Joker/Joker/bin/Debug/net8.0/Joker
+/Users/baqari/Desktop/Joker/Joker/bin/Debug/net8.0/Joker.deps.json
+/Users/baqari/Desktop/Joker/Joker/bin/Debug/net8.0/Joker.runtimeconfig.json
+/Users/baqari/Desktop/Joker/Joker/bin/Debug/net8.0/Joker.dll
+/Users/baqari/Desktop/Joker/Joker/bin/Debug/net8.0/Joker.pdb
+/Users/baqari/Desktop/Joker/Joker/obj/Debug/net8.0/Joker.GeneratedMSBuildEditorConfig.editorconfig
+/Users/baqari/Desktop/Joker/Joker/obj/Debug/net8.0/Joker.AssemblyInfoInputs.cache
+/Users/baqari/Desktop/Joker/Joker/obj/Debug/net8.0/Joker.AssemblyInfo.cs
+/Users/baqari/Desktop/Joker/Joker/obj/Debug/net8.0/Joker.csproj.CoreCompileInputs.cache
+/Users/baqari/Desktop/Joker/Joker/obj/Debug/net8.0/Joker.dll
+/Users/baqari/Desktop/Joker/Joker/obj/Debug/net8.0/refint/Joker.dll
+/Users/baqari/Desktop/Joker/Joker/obj/Debug/net8.0/Joker.pdb
+/Users/baqari/Desktop/Joker/Joker/obj/Debug/net8.0/Joker.genruntimeconfig.cache
+/Users/baqari/Desktop/Joker/Joker/obj/Debug/net8.0/ref/Joker.dll
