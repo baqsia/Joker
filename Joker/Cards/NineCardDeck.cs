@@ -1,9 +1,11 @@
-using System.Collections.Concurrent;
+using Joker.Laps;
 
-namespace Joker;
+namespace Joker.Cards;
 
-public class CardPool: Stack<Card>
+public class NineCardDeck : List<Card>
 {
+    public virtual LapType LapType => LapType.IncementalEights;
+
     private static readonly IEnumerable<Card> _cards = [
         new Card6(CardColor.Clubs),
         new Card6(CardColor.Diamods),
@@ -51,25 +53,27 @@ public class CardPool: Stack<Card>
         new CardAce(CardColor.Hearts)
     ];
 
-    public CardPool() : base(_cards.Shuffle()){}
+    public NineCardDeck() : base(_cards.Shuffle()) { }
 
-    public CardPool(IEnumerable<Card> cards) : base(cards)
+    public virtual void Distribute(int runIndex, Action<Card, int> callback)
     {
-    }
-
-    public void Distribute(Action<Card, int> callback)
-    {
-        var cards = new CardPool(this);
-
         var distributeIndex = 0;
-        while(cards.Any())
-        { 
-            callback(cards.Pop(), distributeIndex);
+        var cards = new NineCardDeck();
+        while (cards.Any())
+        {
+            callback(cards.RandomCard(), distributeIndex);
 
-            if(distributeIndex == 3)
+            if (distributeIndex == 3)
                 distributeIndex = 0;
-            else 
+            else
                 distributeIndex++;
         }
+    }
+
+    protected Card RandomCard()
+    {
+       var item = this[Random.Shared.Next(0, Count - 1)];
+       Remove(item);
+       return item;
     }
 }

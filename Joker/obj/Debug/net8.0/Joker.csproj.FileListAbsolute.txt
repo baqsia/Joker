@@ -12,3 +12,4 @@
 /Users/baqari/Desktop/Joker/Joker/obj/Debug/net8.0/Joker.pdb
 /Users/baqari/Desktop/Joker/Joker/obj/Debug/net8.0/Joker.genruntimeconfig.cache
 /Users/baqari/Desktop/Joker/Joker/obj/Debug/net8.0/ref/Joker.dll
+/Users/baqari/Desktop/Joker/Joker/obj/Debug/net8.0/Joker.sourcelink.json
