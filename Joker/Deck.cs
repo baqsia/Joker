@@ -45,8 +45,8 @@ public class Deck
 
     private void RandomGameType()
     {
-        _lap = new OneEightLap();//Random.Shared.Next(0, 1) == 1
-                // ? new NineLap()
-                // : new OneEightLap();
+        _lap = Random.Shared.Next(0, 1) == 1
+                ? new NineLap()
+                : new OneEightLap();
     }
 }
